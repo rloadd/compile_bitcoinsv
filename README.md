@@ -58,5 +58,9 @@ Para finalizar el proceso puedes instalar las aplicaciones compiladas para que e
  make install
  ```
  
+ ## Recuerda que...
+ 
++ Por defecto el directorio donde descarga los bloques será $HOME/.bitcoin
+
 
 
