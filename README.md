@@ -1,9 +1,9 @@
 # Compilación de bitcoinsv en Ubuntu 18
-Hay otras fuentes sobre como compilar el código fuente de Bitcoin SV (BSV). Por ejemplo, la oficial: https://github.com/bitcoin-sv/bitcoin-sv/blob/master/doc/build-unix.md
+Es recomendable visitar la fuente oficial para compilar código fuente de Bitcoin SV (BSV): https://github.com/bitcoin-sv/bitcoin-sv/blob/master/doc/build-unix.md
 
 ## Notas
 
-Recomendable no menos de 2GB y 2 cores. Sobre estas cantidades subid al doble si se puede. En disco vamos a necesitar unos 5 GB para los productos de la compilacin, configuracin, etc..
+Recomendable no menos de 2GB de RAM y 2 cores. Sobre estas cantidades subid al doble si se puede porque lo vamos a ganar en acortar la duración del proceso. Independientemente de lo que ocupan los paquetes que vamos a instalar, necesitamos unos 2GB de disco para los productos de la compilación, configuración, etc..
 
 
 ## Script de instalación 
