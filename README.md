@@ -1,4 +1,4 @@
-# Compilacin de bitcoinsv en Ubuntu 18
+# Compilación de bitcoinsv en Ubuntu 18
 Hay otras fuentes sobre como compilar el código fuente de Bitcoin SV (BSV). Por ejemplo, la oficial: https://github.com/bitcoin-sv/bitcoin-sv/blob/master/doc/build-unix.md
 
 ## Notas
@@ -6,8 +6,10 @@ Hay otras fuentes sobre como compilar el código fuente de Bitcoin SV (BSV). Por
 Recomendable no menos de 2GB y 2 cores. Sobre estas cantidades subid al doble si se puede. En disco vamos a necesitar unos 5 GB para los productos de la compilacin, configuracin, etc..
 
 
-## Script de instalacin 
+## Script de instalación 
 
+
+```console
 sudo apt -y update
 sudo apt -y upgrade
 sudo apt -y autoremove
@@ -24,3 +26,4 @@ sudo apt -y install g++ libevent-dev libssl-dev libdb-dev libboost-dev libboost-
 
 ./configure
 make
+```
