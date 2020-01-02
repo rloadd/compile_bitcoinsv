@@ -33,7 +33,17 @@ make
 En la carpeta ```src``` tenemos los ejecutables. Por ejemplo, ejecutamos 
 
 
-
 ```console
-./src/bitcoind --help
+./src/bitcoind -testnet -printtoconsole
+2020-01-02 12:10:21 [bitcoin-main] 
+2020-01-02 12:10:21 [bitcoin-main] Bitcoin SV version v0.2.2.0-ba8915504-dev
+2020-01-02 12:10:21 [bitcoin-main] InitParameterInteraction: parameter interaction: -whitelistforcerelay=1 -> setting -whitelistrelay=1
+2020-01-02 12:10:21 [bitcoin-main] Assuming ancestors of block 0000000000327972b8470c11755adf8f4319796bafae01f5a6650490b98a17db have valid signatures.
+[...]
 ```
+
+Lo recomendable es crear un fichero de configuración con las opciones que nos interesan y usar el parámetro ```-conf=<file>``` para lanzar el servicio.
+
+Otros ejecutables que vamos a encontrar son: ```bitcoin-cli, bitcoin-miner, bitcoin-seeder y bitcoin-tx```.
+
+
