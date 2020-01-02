@@ -1,6 +1,6 @@
 # Compilación de Bitcoin SV en Ubuntu 18
 
-Es un tutorial muy directo sobre cmo compilar el código fuente del nodo de Bitcoin SV (BSV). Si quieres buscar errores, depurar, entender qu hace cada cosa, etc.. lo mejor es tener claro como compilar tras editar el código. Aquí te dejo mis notas.
+Es un tutorial muy escueto sobre cómo compilar el código fuente del nodo de Bitcoin SV (BSV). Si quieres buscar errores, depurar, entender qué hace cada cosa, etc.. lo mejor es tener un entorno de compilación al que acudor tras editar el código. Aquí te dejo mis notas.
 
 Es recomendable visitar la fuente oficial para compilar código fuente de Bitcoin SV (BSV): https://github.com/bitcoin-sv/bitcoin-sv/blob/master/doc/build-unix.md
 
@@ -33,14 +33,8 @@ make
 
 
 ## Resultado
-En la carpeta ```src``` tenemos los ejecutables. Por ejemplo, ejecutamos 
+En la carpeta ```src``` tenemos los ejecutables. Por ejemplo, ejecutamos :
 
-## Instalación 
-Para finalizar el proceso puedes instalar las aplicaciones compiladas para que estén accesibles by default. No es necesario si lo que quieres es modificar o depurar, pero lo puedes hacer desde el directorio ```bitcoin-sv```:
-
- ```
- make install
- ```
 
 ```console
 ./src/bitcoind -testnet -printtoconsole
@@ -56,5 +50,13 @@ Lo recomendable es crear un fichero de configuración con las opciones que nos i
 Otros ejecutables que vamos a encontrar son: ```bitcoin-cli, bitcoin-miner, bitcoin-seeder y bitcoin-tx```.
 
 
+
+## Instalación 
+Para finalizar el proceso puedes instalar las aplicaciones compiladas para que estén accesibles by default. No es necesario si lo que quieres es modificar o depurar, pero lo puedes hacer desde el directorio ```bitcoin-sv```:
+
+ ```
+ make install
+ ```
+ 
 
 
