@@ -12,7 +12,7 @@ Recomendable no menos de 2GB de RAM y 2 cores. Sobre estas cantidades subid al d
 ## Script de instalación 
 
 
-```console
+```
 sudo apt -y update
 sudo apt -y upgrade
 sudo apt -y autoremove
@@ -36,7 +36,7 @@ make
 En la carpeta ```src``` tenemos los ejecutables. Por ejemplo, ejecutamos :
 
 
-```console
+```
 ./src/bitcoind -testnet -printtoconsole
 2020-01-02 12:10:21 [bitcoin-main] 
 2020-01-02 12:10:21 [bitcoin-main] Bitcoin SV version v0.2.2.0-ba8915504-dev
