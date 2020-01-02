@@ -27,3 +27,13 @@ sudo apt -y install g++ libevent-dev libssl-dev libdb-dev libboost-dev libboost-
 ./configure
 make
 ```
+
+
+## Resultado
+En la carpeta ```src``` tenemos los ejecutables. Por ejemplo, ejecutamos 
+
+
+
+```console
+./src/bitcoind --help
+```
