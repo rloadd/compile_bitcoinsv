@@ -32,6 +32,12 @@ make
 ## Resultado
 En la carpeta ```src``` tenemos los ejecutables. Por ejemplo, ejecutamos 
 
+## Instalación 
+Para finalizar el proceso puedes instalar las aplicaciones compiladas para que estén accesibles by default. No es necesario si lo que quieres es modificar o depurar, pero lo puedes hacer desde el directorio ```bitcoin-sv```:
+
+ ```
+ make install
+ ```
 
 ```console
 ./src/bitcoind -testnet -printtoconsole
