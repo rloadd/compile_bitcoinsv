@@ -65,7 +65,58 @@ Para finalizar el proceso puedes instalar las aplicaciones compiladas para que e
   + "Stable" Genesis, https://github.com/bitcoin-sv/bitcoin-sv/tree/v1.0.0
   + "Stable" pre-genesis, https://github.com/bitcoin-sv/bitcoin-sv/tree/v0.2.1
  
- Esto aplica a la receta de compilación de arriba en la medida en la que si quieres compilar una de estas dos especificamente debes emplear el link directo. Empleando el genérico, apuntas a la rama master en la versión más reciente que era una y será otra.
+ Esto aplica a la receta de compilación de arriba en la medida en la que si quieres compilar una de estas dos especificamente debes emplear el concepto de release. Empleando el genérico, apuntas a la rama master en la versión más reciente que era una y será otra.
+ 
+```
+ $ git tag -l  
+v0.1.0
+v0.1.1
+v0.2.0
+v0.2.1
+v0.2.2.beta
+v1.0.0
+v1.0.0.beta1
+v1.0.0.beta2
+```
+
+Decidimos que queremos compilar la versión pre-genesis v0.2.1:
+
+```
+$ git checkout tags/v0.2.1
+Note: checking out 'tags/v0.2.1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD se encuentra en f5503f0... Merge commit '21506c72a79870d61f2b866c317704b4c6b0ebf6' into Orinoco
+```
+
+Comprobamos que estamos en esa release:
+
+```
+$ git branch -v
+* (HEAD detached at v0.2.1) f5503f0 Merge commit '21506c72a79870d61f2b866c317704b4c6b0ebf6' into Orinoco
+  master 7fd177c Fix Genesis post-merge compile error.
+```
+
+Podemos volver a la release v1.0.0 o a la última versión de la rama master para obtener que inicialmente hemos clonado:
+
+```
+$ git checkout tags/v1.0.0
+Previous HEAD position was f5503f0... Merge commit '21506c72a79870d61f2b866c317704b4c6b0ebf6' into Orinoco
+HEAD se encuentra en 7fd177c... Fix Genesis post-merge compile error.
+$ git branch -v
+* (HEAD detached at v1.0.0) 7fd177c Fix Genesis post-merge compile error.
+  master 7fd177c Fix Genesis post-merge compile error.
+ ``` 
+
+A partir de aquí la receta continua a partir de ```cd bitcoin-sv``` con normalidad.
  
  
  ## Recuerda que...
