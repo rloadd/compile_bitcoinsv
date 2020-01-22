@@ -58,6 +58,16 @@ Para finalizar el proceso puedes instalar las aplicaciones compiladas para que e
  make install
  ```
  
+ ## Sobre las versiones de código y genesis
+ 
+ En https://github.com/bitcoin-sv/bitcoin-sv/releases encontramos todas las releases de código. Las instrucciones de este doc funcionan con todas ellas hasta la 1.0.0 inclusive. A la derecha de la release, tienes enlaces que te llevan al explorador del repositorio.
+ 
+  + "Stable" Genesis, https://github.com/bitcoin-sv/bitcoin-sv/tree/v1.0.0
+  + "Stable" pre-genesis, https://github.com/bitcoin-sv/bitcoin-sv/tree/v0.2.1
+ 
+ Esto aplica a la receta de compilación de arriba en la medida en la que si quieres compilar una de estas dos especificamente debes emplear el link directo. Empleando el genérico, apuntas a la rama master en la versión más reciente que era una y será otra.
+ 
+ 
  ## Recuerda que...
  
 + Por defecto el directorio donde descarga los bloques será $HOME/.bitcoin
