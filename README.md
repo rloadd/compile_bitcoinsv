@@ -9,7 +9,7 @@ Es recomendable visitar la fuente oficial para compilar código fuente de Bitcoi
 Recomendable no menos de 2GB de RAM y 2 cores. Con el doble de recursos acortamos la duración del proceso bastante. Independientemente de lo que ocupan los paquetes que vamos a instalar, necesitamos unos 2GB de disco para los productos de la compilación, configuración, etc..
 
 
-## Script de instalación 
+## Script de compilación 
 
 
 ```
