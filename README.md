@@ -49,6 +49,20 @@ Lo recomendable es crear un fichero de configuración con las opciones que nos i
 
 Otros ejecutables que vamos a encontrar son: ```bitcoin-cli, bitcoin-miner, bitcoin-seeder y bitcoin-tx```.
 
+**NOTA POST-Genesis:**
+Tras la actualización de Genesis, existe la obligación de determinar un valor para los parámetros ```excessiveblocksize``` y ```maxstackmemoryusageconsensus```. Así nos lo recuerda si lo olvidamos:
+
+```
+./src/bitcoind 
+Mandatory consensus parameter is not set. In order to start bitcoind you must set the following consensus parameters: "excessiveblocksize" and "maxstackmemoryusageconsensus". In order to start bitcoind with no limits you can set both of these parameters to 0 however it is strongly recommended to ensure you understand the implications of this setting.
+
+For more information of how to choose these settings safely for your use case refer to: https://bitcoinsv.io/choosing-consensus-settings/
+```
+
+Una forma correcta de settearlos a 1GB y 100MB respectivamente es:
+```
+./src/bitcoind -excessiveblocksize=1000000000 -maxstackmemoryusageconsensus=100000000
+```
 
 
 ## Instalación 
